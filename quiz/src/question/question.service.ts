@@ -17,7 +17,7 @@ export class QuestionService {
         let questionEntity = new QuestionEntity();
         questionEntity.questionText = question.questionText;
         questionEntity.correctAnswer = question.correctAnswer;
-        questionEntity.wrongAnswer1 = question.correctAnswer;
+        questionEntity.wrongAnswer1 = question.wrongAnswer1;
         questionEntity.wrongAnswer2 = question.wrongAnswer2;
         questionEntity.wrongAnswer3 = question.wrongAnswer3;
 
