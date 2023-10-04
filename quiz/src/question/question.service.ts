@@ -44,7 +44,7 @@ export class QuestionService {
             id: questionEntity.id,
             questionText: questionEntity.questionText,
             correctAnswer: questionEntity.correctAnswer,
-            correctAnswer: questionEntity.wrongAnswer1,
+            wrongAnswer1: questionEntity.wrongAnswer1,
             wrongAnswer2: questionEntity.wrongAnswer2,
             wrongAnswer3: questionEntity.wrongAnswer3
         } = question);
