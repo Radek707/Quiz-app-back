@@ -11,3 +11,11 @@ export interface QuestionItem {
 export type AddQuestionToDbResponse = string;
 
 export type GetQuestionsListResponse = QuestionItem[];
+
+export type DeleteQuestionResponse = {
+    isSuccess: boolean;
+}
+
+export type UpdateQuestionResponse = {
+    isSuccess: boolean;
+}

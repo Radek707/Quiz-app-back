@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31b6f39-f6d3-4722-b97a-28bdd29f24a9" name="Changes" comment="Created questionEntity and connected with DB, implemneted active record methods: find, save.">
-      <change afterPath="$PROJECT_DIR$/quiz/src/question/question.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="a31b6f39-f6d3-4722-b97a-28bdd29f24a9" name="Changes" comment="Created questionEntity and connected with DB, implemented active record methods: find, save.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz/src/question/question.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/question/question.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz/src/question/question.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/question/question.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz/src/question/question.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/question/question.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz/src/types/interfaces/question.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/types/interfaces/question.ts" afterDir="false" />
     </list>
@@ -97,7 +92,7 @@
       <updated>1696267127199</updated>
       <workItem from="1696267128623" duration="13580000" />
       <workItem from="1696409551100" duration="1130000" />
-      <workItem from="1696410766945" duration="10113000" />
+      <workItem from="1696410766945" duration="15408000" />
     </task>
     <task id="LOCAL-00001" summary="Created questionEntity and connected with DB, implemneted active record methods: find, save.">
       <created>1696438213002</created>
@@ -106,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696438213002</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created questionEntity and connected with DB, implemented active record methods: find, save.">
+      <created>1696438413366</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1696438413366</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +130,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
@@ -142,6 +144,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created questionEntity and connected with DB, implemneted active record methods: find, save." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created questionEntity and connected with DB, implemneted active record methods: find, save." />
+    <MESSAGE value="Created questionEntity and connected with DB, implemented active record methods: find, save." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created questionEntity and connected with DB, implemented active record methods: find, save." />
   </component>
 </project>
