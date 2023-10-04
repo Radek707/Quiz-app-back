@@ -1,40 +1,28 @@
-import { Injectable } from '@nestjs/common';
-import {AddQuestionToDbResponse, GetQuestionsListResponse, QuestionItem} from "../types";
+import {Injectable} from '@nestjs/common';
+import {
+    AddQuestionToDbResponse,
+    GetQuestionsListResponse,
+    QuestionItem,
+} from '../types';
+import {QuestionEntity} from "./question.entity";
 
 @Injectable()
 export class QuestionService {
-    private questions: QuestionItem[] = [];
 
-    getQuestions(): GetQuestionsListResponse {
-        console.log("Questions array");
-        return [
-            {
-                id: 1,
-                questionText: "4 x 4",
-                correctAnswer: "16",
-                wrongAnswers: ["6", "12", "21"],
-            },
-            {
-                id: 2,
-                questionText: "2 x 4",
-                correctAnswer: "8",
-                wrongAnswers: ["6", "12", "16"],
-            },
-            {
-                id: 3,
-                questionText: "4 x 6",
-                correctAnswer: "24",
-                wrongAnswers: ["10", "18", "26"],
-            }
-        ]
+    getQuestions(): Promise<GetQuestionsListResponse> {
+        return QuestionEntity.find();
     }
 
-    addQuestion(question: QuestionItem): AddQuestionToDbResponse {
-        this.questions.push(question);
+    async addQuestion(question: QuestionItem): Promise<AddQuestionToDbResponse>{
+        let questionEntity = new QuestionEntity();
+        questionEntity.questionText = question.questionText;
+        questionEntity.correctAnswer = question.correctAnswer;
+        questionEntity.wrongAnswer1 = question.correctAnswer;
+        questionEntity.wrongAnswer2 = question.wrongAnswer2;
+        questionEntity.wrongAnswer3 = question.wrongAnswer3;
 
-        console.log(this.questions);
+        await questionEntity.save();
 
-        const isSuccessful = true
-        return {isSuccessful};
+        return  questionEntity.id;
     }
 }

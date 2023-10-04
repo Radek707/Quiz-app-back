@@ -4,13 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31b6f39-f6d3-4722-b97a-28bdd29f24a9" name="Changes" comment="" />
+    <list default="true" id="a31b6f39-f6d3-4722-b97a-28bdd29f24a9" name="Changes" comment="Created questionEntity and connected with DB, implemneted active record methods: find, save.">
+      <change afterPath="$PROJECT_DIR$/quiz/src/question/question.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/src/question/question.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/question/question.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/src/question/question.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/question/question.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/src/question/question.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/question/question.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/src/types/interfaces/question.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/types/interfaces/question.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -22,22 +37,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/rnowo/WebstormProjects/QuizV2/quiz-back/quiz/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\rnowo\\WebstormProjects\\QuizV2\\quiz-back\\quiz\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "18.12.0",
+    "javascript.nodejs.core.library.typings.version": "18.18.1",
+    "last_opened_file_path": "C:/Users/rnowo/WebstormProjects/QuizV2/quiz-back/quiz/src",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\rnowo\\WebstormProjects\\QuizV2\\quiz-back\\quiz\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "ts.external.directory.path": "C:\\Users\\rnowo\\WebstormProjects\\QuizV2\\quiz-back\\quiz\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="Push.Settings">
     <force-push-targets>
       <force-push-target remote-path="origin" branch="main" />
@@ -66,6 +85,9 @@
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a31b6f39-f6d3-4722-b97a-28bdd29f24a9" name="Changes" comment="" />
@@ -75,8 +97,16 @@
       <updated>1696267127199</updated>
       <workItem from="1696267128623" duration="13580000" />
       <workItem from="1696409551100" duration="1130000" />
-      <workItem from="1696410766945" duration="745000" />
+      <workItem from="1696410766945" duration="10113000" />
     </task>
+    <task id="LOCAL-00001" summary="Created questionEntity and connected with DB, implemneted active record methods: find, save.">
+      <created>1696438213002</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696438213002</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -98,7 +128,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
@@ -109,5 +139,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created questionEntity and connected with DB, implemneted active record methods: find, save." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created questionEntity and connected with DB, implemneted active record methods: find, save." />
   </component>
 </project>

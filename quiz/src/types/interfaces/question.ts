@@ -1,13 +1,13 @@
 export interface QuestionItem {
-    id: number;
+    id?: string;
     questionText: string;
     correctAnswer: string;
-    wrongAnswers: string[];
+    wrongAnswer1: string;
+    wrongAnswer2: string;
+    wrongAnswer3: string;
 }
 
 
-export type AddQuestionToDbResponse = {
-    isSuccessful: boolean;
-}
+export type AddQuestionToDbResponse = string;
 
 export type GetQuestionsListResponse = QuestionItem[];
