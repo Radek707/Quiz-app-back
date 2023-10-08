@@ -31,6 +31,9 @@ export class QuestionEntity extends BaseEntity implements QuestionItem{
     })
     wrongAnswer2: string;
 
-    @Column()
+    @Column({
+        type: 'text',
+        default: '',
+    })
     wrongAnswer3: string;
 }

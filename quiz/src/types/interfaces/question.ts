@@ -7,8 +7,9 @@ export interface QuestionItem {
     wrongAnswer3: string;
 }
 
-
 export type AddQuestionToDbResponse = string;
+
+export type GetQuestionResponse = QuestionItem;
 
 export type GetQuestionsListResponse = QuestionItem[];
 

@@ -1,7 +1,7 @@
 import {Body, Controller, Delete, Get, Inject, Param, Post, Put} from '@nestjs/common';
 import {QuestionService} from './question.service';
 import {
-    AddQuestionToDbResponse,
+    AddQuestionToDbResponse, GetQuestionResponse,
     GetQuestionsListResponse,
     QuestionItem,
 } from '../types';
@@ -18,6 +18,12 @@ export class QuestionController {
         return this.questionService.getQuestions();
     }
 
+    @Get('/:id')
+    getQuestion(
+        @Param() id: string,
+    ): Promise<GetQuestionResponse> {
+        return this.questionService.findQuestionById(id);
+    }
     @Post('/')
     addQuestion(
         @Body() question: QuestionItem,

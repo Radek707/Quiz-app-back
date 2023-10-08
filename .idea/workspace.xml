@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31b6f39-f6d3-4722-b97a-28bdd29f24a9" name="Changes" comment="Created questionEntity and connected with DB, implemented active record methods: find, save.">
+    <list default="true" id="a31b6f39-f6d3-4722-b97a-28bdd29f24a9" name="Changes" comment="fixed bug in addQuestion method in question.service.ts">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz/src/question/question.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/question/question.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/src/question/question.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/question/question.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz/src/question/question.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/question/question.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz/src/types/interfaces/question.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/types/interfaces/question.ts" afterDir="false" />
     </list>
@@ -18,7 +19,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,6 +27,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
   <component name="ProjectId" id="2WDVQgNiuQtklF2evgo5l72DQ0Z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,7 +42,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.12.0",
-    "javascript.nodejs.core.library.typings.version": "18.18.1",
+    "javascript.nodejs.core.library.typings.version": "18.18.3",
     "last_opened_file_path": "C:/Users/rnowo/WebstormProjects/QuizV2/quiz-back/quiz/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -92,7 +96,9 @@
       <updated>1696267127199</updated>
       <workItem from="1696267128623" duration="13580000" />
       <workItem from="1696409551100" duration="1130000" />
-      <workItem from="1696410766945" duration="15408000" />
+      <workItem from="1696410766945" duration="17456000" />
+      <workItem from="1696452267406" duration="452000" />
+      <workItem from="1696606445208" duration="9814000" />
     </task>
     <task id="LOCAL-00001" summary="Created questionEntity and connected with DB, implemneted active record methods: find, save.">
       <created>1696438213002</created>
@@ -108,13 +114,49 @@
       <option name="project" value="LOCAL" />
       <updated>1696438413366</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added delete and update methods for question.service.ts">
+      <created>1696444104175</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1696444104175</updated>
+    </task>
+    <task id="LOCAL-00004" summary="fixed bug in updateQuestion method in question.service.ts">
+      <created>1696445051373</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1696445051373</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fixed bug in addQuestion method in question.service.ts">
+      <created>1696446713646</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1696446713646</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
@@ -130,7 +172,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="develop" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
@@ -145,6 +187,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created questionEntity and connected with DB, implemneted active record methods: find, save." />
     <MESSAGE value="Created questionEntity and connected with DB, implemented active record methods: find, save." />
-    <option name="LAST_COMMIT_MESSAGE" value="Created questionEntity and connected with DB, implemented active record methods: find, save." />
+    <MESSAGE value="added delete and update methods for question.service.ts" />
+    <MESSAGE value="fixed bug in updateQuestion method in question.service.ts" />
+    <MESSAGE value="fixed bug in addQuestion method in question.service.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed bug in addQuestion method in question.service.ts" />
   </component>
 </project>

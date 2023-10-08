@@ -1,6 +1,6 @@
 import {Injectable} from '@nestjs/common';
 import {
-    AddQuestionToDbResponse, DeleteQuestionResponse,
+    AddQuestionToDbResponse, DeleteQuestionResponse, GetQuestionResponse,
     GetQuestionsListResponse,
     QuestionItem, UpdateQuestionResponse,
 } from '../types';
@@ -26,7 +26,7 @@ export class QuestionService {
         return questionEntity.id;
     }
 
-    async deleteQuestion(id): Promise<DeleteQuestionResponse> {
+    async deleteQuestion(id: string): Promise<DeleteQuestionResponse> {
 
         try {
             await QuestionEntity.delete(id);
@@ -57,5 +57,10 @@ export class QuestionService {
         }
 
         return {isSuccess: false}
+    }
+
+    async findQuestionById(idString: string): Promise<GetQuestionResponse> {
+        // @ts-ignore
+        return QuestionEntity.findBy(idString);
     }
 }
