@@ -5,9 +5,16 @@ import {
     QuestionItem, UpdateQuestionResponse,
 } from '../types';
 import {QuestionEntity} from "./question.entity";
+import {DataSource} from "typeorm";
+import {InjectDataSource} from "@nestjs/typeorm";
 
 @Injectable()
 export class QuestionService {
+
+    constructor(
+        @InjectDataSource()
+        private dataSource: DataSource
+    ) { }
 
     async getQuestions(): Promise<GetQuestionsListResponse> {
         return await QuestionEntity.find();
@@ -38,7 +45,7 @@ export class QuestionService {
         return {isSuccess: false};
     }
 
-    async updateQuestion(question): Promise<UpdateQuestionResponse> {
+    async updateQuestion({question}: { question: QuestionItem }): Promise<UpdateQuestionResponse> {
         let questionEntity = new QuestionEntity();
         ({
             id: questionEntity.id,
@@ -59,8 +66,23 @@ export class QuestionService {
         return {isSuccess: false}
     }
 
-    async findQuestionById(idString: string): Promise<GetQuestionResponse> {
+    async findQuestionById(id: string): Promise<QuestionEntity> {
         // @ts-ignore
-        return QuestionEntity.findBy(idString);
+        return await QuestionEntity.findBy(id);
+    }
+
+    async findQuestion(searchTerm: string) {
+        console.log("Searching for: ", searchTerm);
+        const search = searchTerm;
+        console.log(search);
+        const response = await this.dataSource
+            .createQueryBuilder()
+            .select("question")
+            .from(QuestionEntity, "question")
+            .where("question.questionText LIKE :questionText", {
+                questionText: `%${search}%`,
+            })
+            .getMany()
+        return response;
     }
 }

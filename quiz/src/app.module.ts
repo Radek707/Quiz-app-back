@@ -1,9 +1,13 @@
-import {Module} from '@nestjs/common';
+import {Injectable, Module} from '@nestjs/common';
 import {AppController} from './app.controller';
 import {AppService} from './app.service';
-import {TypeOrmModule} from '@nestjs/typeorm';
+import {InjectDataSource, TypeOrmModule} from '@nestjs/typeorm';
 import {config} from './config/config';
 import {QuestionModule} from './question/question.module';
+import {DataSource} from "typeorm";
+import {QuestionEntity} from "./question/question.entity";
+import { LearningController } from './learning/learning.controller';
+import { LearningModule } from './learning/learning.module';
 
 @Module({
     imports: [
@@ -21,8 +25,9 @@ import {QuestionModule} from './question/question.module';
             autoLoadEntities: true,
         }),
         QuestionModule,
+        LearningModule,
     ],
-    controllers: [AppController],
+    controllers: [AppController, LearningController],
     providers: [AppService],
 })
 export class AppModule {

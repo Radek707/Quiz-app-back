@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a31b6f39-f6d3-4722-b97a-28bdd29f24a9" name="Changes" comment="fixed bug in addQuestion method in question.service.ts">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz/src/learning/learning.controller.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz/src/learning/learning.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz/src/learning/learning.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz/src/learning/learning.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz/src/learning/learning.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/quiz/src/learning/learning.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quiz/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz/src/question/question.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/question/question.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz/src/question/question.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/question/question.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/quiz/src/question/question.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/question/question.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quiz/src/types/interfaces/question.ts" beforeDir="false" afterPath="$PROJECT_DIR$/quiz/src/types/interfaces/question.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,35 +32,35 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2WDVQgNiuQtklF2evgo5l72DQ0Z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "18.12.0",
-    "javascript.nodejs.core.library.typings.version": "18.18.3",
-    "last_opened_file_path": "C:/Users/rnowo/WebstormProjects/QuizV2/quiz-back/quiz/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\rnowo\\WebstormProjects\\QuizV2\\quiz-back\\quiz\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Users\\rnowo\\WebstormProjects\\QuizV2\\quiz-back\\quiz\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;18.12.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;18.18.3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rnowo/WebstormProjects/QuizV2/quiz-back/quiz/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\rnowo\\WebstormProjects\\QuizV2\\quiz-back\\quiz\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\rnowo\\WebstormProjects\\QuizV2\\quiz-back\\quiz\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="Push.Settings">
     <force-push-targets>
       <force-push-target remote-path="origin" branch="main" />

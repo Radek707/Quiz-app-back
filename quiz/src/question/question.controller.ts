@@ -5,13 +5,13 @@ import {
     GetQuestionsListResponse,
     QuestionItem,
 } from '../types';
+import {QuestionEntity} from "./question.entity";
 
 @Controller('question')
 export class QuestionController {
     constructor(
         @Inject(QuestionService) private questionService: QuestionService,
-    ) {
-    }
+    ) {}
 
     @Get('/')
     getQuestionsList(): Promise<GetQuestionsListResponse> {
@@ -21,13 +21,21 @@ export class QuestionController {
     @Get('/:id')
     getQuestion(
         @Param() id: string,
-    ): Promise<GetQuestionResponse> {
+    ): Promise<QuestionEntity> {
         return this.questionService.findQuestionById(id);
     }
+
+    @Get('/find/:searchTerm')
+    findQuestion(
+        @Param('searchTerm') searchTerm: string,
+    ) {
+        return this.questionService.findQuestion(searchTerm);
+    }
+
     @Post('/')
     addQuestion(
         @Body() question: QuestionItem,
-    ): Promise<AddQuestionToDbResponse>  {
+    ): Promise<AddQuestionToDbResponse> {
         return this.questionService.addQuestion(question);
     }
 
@@ -42,6 +50,7 @@ export class QuestionController {
     updateQuestion(
         @Body() question: QuestionItem,
     ) {
-        return this.questionService.updateQuestion(question);
+        return this.questionService.updateQuestion({question: question});
     }
+
 }

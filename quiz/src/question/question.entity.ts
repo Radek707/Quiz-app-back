@@ -1,5 +1,6 @@
-import {BaseEntity, Column, Entity, PrimaryGeneratedColumn} from "typeorm";
+import {BaseEntity, Column, Entity, OneToOne, PrimaryGeneratedColumn} from "typeorm";
 import {QuestionItem} from "../types";
+import {Learning} from "../learning/learning.entity";
 
 @Entity()
 export class QuestionEntity extends BaseEntity implements QuestionItem{
@@ -36,4 +37,7 @@ export class QuestionEntity extends BaseEntity implements QuestionItem{
         default: '',
     })
     wrongAnswer3: string;
+
+    @OneToOne(() => Learning, (learning) => learning.question)
+    learning: Learning;
 }
