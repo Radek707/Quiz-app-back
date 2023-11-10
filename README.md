@@ -17,4 +17,5 @@ The purpose is to provide database for quiz app. It is very simple, it contains:
   - errors handling - not completed;
   - there is no user option, no registration is required;
   - rate limiter;
+  - ts types are not correct, I used a lot of any just to save time, I know it is wrong;
   - I plan to improve it in future with register/login and add collection to group questions.
