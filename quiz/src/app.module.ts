@@ -8,12 +8,13 @@ import {DataSource} from "typeorm";
 import {QuestionEntity} from "./question/question.entity";
 import { LearningController } from './learning/learning.controller';
 import { LearningModule } from './learning/learning.module';
+import { UserModule } from './user/user.module';
 
 @Module({
     imports: [
         TypeOrmModule.forRoot({
             type: 'mysql',
-            host: 'localhost',
+            host: config.dbHost,
             port: 3306,
             username: config.dbUser,
             password: config.dbPassword,
@@ -26,6 +27,7 @@ import { LearningModule } from './learning/learning.module';
         }),
         QuestionModule,
         LearningModule,
+        UserModule,
     ],
     controllers: [AppController, LearningController],
     providers: [AppService],
