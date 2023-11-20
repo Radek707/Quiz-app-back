@@ -9,6 +9,7 @@ import {QuestionEntity} from "./question/question.entity";
 import { LearningController } from './learning/learning.controller';
 import { LearningModule } from './learning/learning.module';
 import { UserModule } from './user/user.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
     imports: [
@@ -28,6 +29,7 @@ import { UserModule } from './user/user.module';
         QuestionModule,
         LearningModule,
         UserModule,
+        AuthModule,
     ],
     controllers: [AppController, LearningController],
     providers: [AppService],

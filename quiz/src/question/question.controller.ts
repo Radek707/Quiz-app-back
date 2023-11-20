@@ -1,4 +1,4 @@
-import {Body, Controller, Delete, Get, Inject, Param, Post, Put} from '@nestjs/common';
+import {Body, Controller, Delete, Get, Inject, Param, Post, Put, UseGuards} from '@nestjs/common';
 import {QuestionService} from './question.service';
 import {
     AddQuestionToDbResponse, GetQuestionResponse,
@@ -6,7 +6,9 @@ import {
     QuestionItem,
 } from '../types';
 import {QuestionEntity} from "./question.entity";
+import { JwtGuard } from 'src/auth/guards/jwt-auth.guard';
 
+@UseGuards(JwtGuard)
 @Controller('question')
 export class QuestionController {
     constructor(
