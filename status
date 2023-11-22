@@ -1,0 +1,53 @@
+[33mcommit d0d06afe71e7572cb819e584968896282a4841d4[m[33m ([m[1;36mHEAD -> [m[1;32mdevelop[m[33m)[m
+Author: Radek707 <rnowosielski77@gmail.com>
+Date:   Mon Nov 20 23:17:42 2023 +0100
+
+    jwt-passport strategy added
+
+[33mcommit ccd5fc101e970225834f706960e5a4213448f360[m[33m ([m[1;31morigin/develop[m[33m)[m
+Author: Radek707 <rnowosielski77@gmail.com>
+Date:   Sat Nov 18 23:03:59 2023 +0100
+
+    user entity created, no relations yet
+
+[33mcommit 0cf0eaa67aac9ce9eaf87b7b4d2399dc67bcefb5[m
+Author: Radek707 <rnowosielski77@gmail.com>
+Date:   Tue Nov 7 21:09:14 2023 +0100
+
+    first working version
+
+[33mcommit f077ba5815257f171c41675caa584e1496dd6949[m
+Author: Radek707 <rnowosielski77@gmail.com>
+Date:   Sun Oct 8 19:32:18 2023 +0200
+
+    added edit question and find by id methods
+
+[33mcommit d44748ecc26512eede034283ebcfd4fa2ec1991e[m
+Author: Radek707 <rnowosielski77@gmail.com>
+Date:   Wed Oct 4 21:11:53 2023 +0200
+
+    fixed bug in addQuestion method in question.service.ts
+
+[33mcommit f9c6417f3105328c5417d408f7435a4069261edb[m
+Author: Radek707 <rnowosielski77@gmail.com>
+Date:   Wed Oct 4 20:44:11 2023 +0200
+
+    fixed bug in updateQuestion method in question.service.ts
+
+[33mcommit 4889c392e0e7de8d298ed505cce3499b0128795c[m[33m ([m[1;32mmain[m[33m)[m
+Author: Radek707 <rnowosielski77@gmail.com>
+Date:   Wed Oct 4 20:28:23 2023 +0200
+
+    added delete and update methods for question.service.ts
+
+[33mcommit ab0db855f0ba11c23c1e456fcbe2eebd75608570[m
+Author: Radek707 <rnowosielski77@gmail.com>
+Date:   Wed Oct 4 18:53:33 2023 +0200
+
+    Created questionEntity and connected with DB, implemented active record methods: find, save.
+
+[33mcommit 9a5db43d3714ea36a2a5b09555f1ae03bdec6516[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Radek707 <rnowosielski77@gmail.com>
+Date:   Wed Oct 4 11:30:47 2023 +0200
+
+    First commit
